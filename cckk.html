@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Understanding Form elements</title>
+    <title>Understanding Form Elements</title>
 </head>
-<body>
-    <h1>Registration Form</h1>
+<body style="background-color: #f0f8ff;">
+    <h1 style="color: #2e8b57;">Registration Form</h1>
     <form>
-        <fieldset style="width:550px;">
-            <legend>Personal details</legend>
-        <label for="firstname">First name</label><br>
-        <input type="text" id="firstname" name="firstname" placeholder="enter your firstname"  required title="enter name with minimum 2 characters" ><br>
-        <label for="age">Age</label><br>
-        <input type="number" id="age" placeholder="enter your age" min="18" max="25" title="age should be 2 digits"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter email" title="abc@gmail.com"><br><br>
-        <label for="pass">Password:</label><br>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
-        <label for="dob">DOB</label>
-        <input type="date" id="dob" placeholder="enter dob"><br><br>
-        <label for="time">Time:</label>
-        <input type="time" id="time" placeholder="enter time"><br><br>
-        <lable for="url">URL:</lable>
-        <input for="url" id="url"><br><br>
-        <label>Select your skills:</label><br>
-        <input type="checkbox" value="java">java programming<br>
-        <input type="checkbox" value="python">python<br>
-        <input type="checkbox" value="Nosql">mongodb<br>
-        <input type="checkbox" value="MERN">node.js<br>
-        <br><br>
-        <label>Gender:</label>
-        <input type="radio" name="gender">male
-        <input type="radio" name="gender">female
-        <input type="radio" name="gender">others
-        <br><br>
-        <label>select  volume:</label><br>
-        <input type="range">
-        <br><br>
-        <label>select color:</label>
-        <input type="color">
-        <br><br>
-        <label>upload your files:</label><br><br>
-        <input type="file" accept=".jpg, .pdf, .png"> <br><br>
-        <label for="city">Select your city</label>
-        <select id="city"><br><br>
-            <option>select</option>
-            <option value="pun">pune</option>
-            <option value="bnglr">banglore</option>
-            <option value="nag">nagpur</option><br><br>
-            <br><br>
-            <br><br>
-            <textarea>text area.........</textarea>
-        <br><br>
-        <input type="submit">
-    </fieldset>
+        <fieldset style="width:550px; background-color: #ffffff; border: 2px solid #2e8b57;">
+            <legend style="color: #2e8b57;">Personal details</legend>
+            
+            <label for="firstname" style="color: #000080;">First name:</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required title="Enter a name with a minimum of 2 characters" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label for="age" style="color: #000080;">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="25" title="Age should be between 18 and 25" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label for="email" style="color: #000080;">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label for="password" style="color: #000080;">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label for="dob" style="color: #000080;">DOB:</label><br>
+            <input type="date" id="dob" name="dob" placeholder="Enter DOB" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label for="time" style="color: #000080;">Time:</label><br>
+            <input type="time" id="time" name="time" placeholder="Enter time" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label for="url" style="color: #000080;">URL:</label><br>
+            <input type="url" id="url" name="url" placeholder="Enter a valid URL" style="background-color: #f5f5f5; color: #000080;"><br><br>
+            
+            <label style="color: #000080;">Select your skills:</label><br>
+            <input type="checkbox" name="skills" value="java"> Java Programming<br>
+            <input type="checkbox" name="skills" value="python"> Python<br>
+            <input type="checkbox" name="skills" value="nosql"> MongoDB<br>
+            <input type="checkbox" name="skills" value="mern"> Node.js<br><br>
+            
+            <label style="color: #000080;">Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="others"> Others<br><br>
+            
+            <label for="volume" style="color: #000080;">Select volume:</label><br>
+            <input type="range" name="volume" style="background-color: #ffffff; color: #000080;"><br><br>
+            
+            <label for="favcolor" style="color: #000080;">Select color:</label><br>
+            <input type="color" name="favcolor"><br><br>
+            
+            <label for="file" style="color: #000080;">Upload your files:</label><br>
+            <input type="file" name="file" accept=".jpg, .pdf, .png" style="color: #000080;"><br><br>
+            
+            <label for="city" style="color: #000080;">Select your city:</label><br>
+            <select id="city" name="city" style="background-color: #f5f5f5; color: #000080;">
+                <option value="select">Select</option> 
+                <option value="pun">Pune</option>
+                <option value="bnglr">Bangalore</option>
+                <option value="nag">Nagpur</option>
+            </select><br><br>
+            
+            <label for="description" style="color: #000080;">Text area:</label><br>
+            <textarea id="description" name="description" style="background-color: #f5f5f5; color: #000080;">Text area.........</textarea><br><br>
+            
+            <input type="submit" value="Submit" style="background-color: #2e8b57; color: white;">
+        </fieldset>
     </form>
-   
 </body>
 </html>
